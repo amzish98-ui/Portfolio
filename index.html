@@ -5,14 +5,93 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Amir | Developer Portfolio</title>
         <link rel="stylesheet" href="./css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     </head>
 
     <body>
-        <header class="editor-tabs">
-            <span class="tab active">index.html</span>
-            <span class="tab">about.html</span>
-            <span class="tab">projects.js</span>
-            <span class="tab">contact.css</span>
-        </header>
+        
+       <header class="site-header">
+  <nav class="navbar">
+    <div class="nav-inner">
+
+      <div class="nav-left">
+        <h1>Amir Developer Portfolio</h1>
+      </div>
+
+      <ul class="nav-center">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <a href="#contact" class="contact-btn">Contact</a>
+      </div>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        ☰
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+ <div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" onclick="closeMenu()">Home</a>
+  <a href="about.html" onclick="closeMenu()">About</a>
+  <a href="projects.html" onclick="closeMenu()">Projects</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+</div>
+
+
+
+        <main class="hero">
+    <p class="subtitle">Design meets logic</p>
+
+    <h1>
+      Building <span>solutions</span><br>
+      through code & logic.
+    </h1>
+
+    <p class="description">
+      Aspiring developer with interests in gaming, coding,
+      mathematics, and physics.
+    </p>
+
+    <a href="projects.html" class="link">View my projects →</a>
+  </main>
+    
+  <section class="gallery">
+    <img src="assets/images/project1.jpg" alt="Project 1 screenshot">
+    <img src="assets/images/project2.jpg" alt="Project 2 screenshot">
+    <img src="assets/images/project3.jpg" alt="Project 3 screenshot">
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Lets build something amazing together!</p>
+
+    <div class="contact-info">
+    <p>
+      <a href="mailto:amzish98@gmail.com">amzish98@gmail.com</a>
+    </p>
+
+    <p>
+      <a href="tel:+447544424932">+44 7544 424932</a>
+    </p>
+    </div>
+  </section>
+
+    <script>
+function toggleMenu() {
+  document.getElementById("mobileMenu").classList.toggle("active");
+}
+
+function closeMenu() {
+  document.getElementById("mobileMenu").classList.remove("active");
+}
+</script>
+
     </body>
 </html>

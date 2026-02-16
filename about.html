@@ -1,0 +1,124 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Amir | Developer Portfolio</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+    
+      <header class="site-header">
+  <nav class="navbar">
+    <div class="nav-inner">
+
+      <div class="nav-left">
+        <h1>Amir Developer Portfolio</h1>
+      </div>
+
+      <ul class="nav-center">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <a href="#contact" class="contact-btn">Contact</a>
+      </div>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        ☰
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" onclick="closeMenu()">Home</a>
+  <a href="about.html" onclick="closeMenu()">About</a>
+  <a href="projects.html" onclick="closeMenu()">Projects</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+</div>
+
+<main class="about-page">
+  <section class="about-grid">
+
+    <div class="about-card about-main">
+      <h2>About Me</h2>
+      <p>
+        Hello! I’m Amir an aspiring developer with a passion for
+        solving problems and building digital experiences that are
+        both functional and engaging.
+      </p>
+
+      <p>
+        My journey started with a fascination for technology and logic,
+        backed by strong interests in gaming, mathematics, and physics.
+        These interests pushed me towards coding and web development.
+      </p>
+
+      <p>
+        Outside of development, I’m an avid football fan both playing
+        and watching and I enjoy gaming with friends in my spare time.
+      </p>
+    </div>
+
+    <div class="about-card">
+      <h3>Professional Experience</h3>
+      <p>
+        Before focusing on tech, I gained real-world experience in
+        <strong>sales</strong> and <strong>real estate</strong>.
+      </p>
+      <p>
+        These roles helped me develop strong communication skills,
+        confidence with clients, and the ability to manage complex
+        responsibilities independently.
+      </p>
+    </div>
+
+    <div class="about-card">
+      <h3>My Approach</h3>
+      <p>
+        I believe in learning by doing building small projects,
+        iterating on feedback, and constantly improving.
+      </p>
+      <p>
+        My long-term goal is full-stack development and creating
+        interactive applications that solve real-world problems.
+      </p>
+    </div>
+
+  </section>
+</main>
+
+    <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Lets build something amazing together!</p>
+
+    <div class="contact-info">
+    <p>
+      <a href="mailto:amzish98@gmail.com">amzish98@gmail.com</a>
+    </p>
+
+    <p>
+      <a href="tel:+447544424932">+44 7544 424932</a>
+    </p>
+    </div>
+  </section>
+
+  <script>
+function toggleMenu() {
+  document.getElementById("mobileMenu").classList.toggle("active");
+}
+
+function closeMenu() {
+  document.getElementById("mobileMenu").classList.remove("active");
+}
+</script>
+
+
+</body>
+</html>

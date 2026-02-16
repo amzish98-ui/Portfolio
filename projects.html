@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects | Amir Developer Portfolio</title>
+  <link rel="stylesheet" href="./css/styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+<header class="site-header">
+  <nav class="navbar">
+    <div class="nav-inner">
+
+      <div class="nav-left">
+        <h1>Amir Developer Portfolio</h1>
+      </div>
+
+      <ul class="nav-center">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <a href="#contact" class="contact-btn">Contact</a>
+      </div>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        ☰
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" onclick="closeMenu()">Home</a>
+  <a href="about.html" onclick="closeMenu()">About</a>
+  <a href="projects.html" onclick="closeMenu()">Projects</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+</div>
+
+<section class="projects-intro">
+  <h2>Selected Projects</h2>
+  <p>
+    A collection of projects where I combine coding, logic,
+    and problem-solving to build clean, functional solutions.
+  </p>
+</section>
+
+
+
+<section class="projects-grid">
+
+  <article class="project-card">
+    <h3>Portfolio Website</h3>
+    <p>
+      My first personal website built using HTML and CSS,
+      focusing on layout, navigation, and visual hierarchy.
+    </p>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS Grid & Flexbox</li>
+      <li>Responsive layout</li>
+    </ul>
+  </article>
+
+  <article class="project-card">
+  <h3>Nuclear Fusion Research Project</h3>
+  <p>
+    A physics research presentation exploring the principles of nuclear fusion,
+    plasma confinement, energy output analysis, and real-world fusion reactor designs.
+  </p>
+
+  <ul>
+    <li>Fusion reaction physics</li>
+    <li>Tokamak reactor design</li>
+    <li>Energy efficiency calculations</li>
+    <li>Future clean energy implications</li>
+  </ul>
+
+  <a href="#" class="project-btn">View Presentation</a>
+</article>
+
+<article class="project-card">
+    <h3>Coming Soon</h3>
+    <p>
+      Future projects will be added here as I continue
+      learning and building.
+    </p>
+  </article>
+
+</section>
+
+
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Lets build something amazing together!</p>
+
+    <div class="contact-info">
+    <p>
+      <a href="mailto:amzish98@gmail.com">amzish98@gmail.com</a>
+    </p>
+
+    <p>
+      <a href="tel:+447544424932">+44 7544 424932</a>
+    </p>
+    </div>
+  </section>
+
+  <script>
+function toggleMenu() {
+  document.getElementById("mobileMenu").classList.toggle("active");
+}
+
+function closeMenu() {
+  document.getElementById("mobileMenu").classList.remove("active");
+}
+</script>
+
+
+</body>
+
+</section>
